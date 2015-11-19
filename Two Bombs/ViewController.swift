@@ -10,6 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var leftCat: UIImageView!
+    @IBOutlet weak var rightCat: UIImageView!
+    @IBAction func clickLeft(sender: AnyObject) {
+        
+        leftCat.hidden = true
+        
+    }
+    
+    @IBAction func clickRight(sender: AnyObject) {
+        
+        rightCat.hidden = true
+        
+    }
+    @IBAction func showBoth(sender: AnyObject) {
+        
+        leftCat.hidden = false
+        rightCat.hidden = false
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
